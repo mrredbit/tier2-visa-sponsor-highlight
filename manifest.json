@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Tier 2 Visa Sponsor Highlight",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/jobs/*"
+      ],
+      "js": [
+        "jquery-3.1.1.min.js",
+        "utility.js",
+        "tier2list.js",
+        "matcher/linkedin.js"
+      ],
+      "css": [
+        "general.css"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.tier-2-checked.has-tier-2-license {
+    color: green !important;
+}
+
+.tier-2-checked:not(.has-tier-2-license):after {
+    content: ' (Not in Sponsor list)';
+    color: red !important;
+}
+
+.tier-2-checked.has-tier-2-license:after {
+    content: ' (**In Sponsor List**)';
+}
