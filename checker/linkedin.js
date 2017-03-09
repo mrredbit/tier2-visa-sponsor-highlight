@@ -9,25 +9,13 @@ $(function () {
                     if ($(this).is('.job-card__company-name:not(.tier-2-checked)')) {
                         tier2Util.companyCheck($(this));
                     }
-
-                    if ($(this).is('.jobs-details-top-card__company-url:not(.tier-2-checked)')) {
-                        if ($(this)) {
-                            jobDetailTopObserver.observe($(this).get(0), {
-                                childList: true,
-                                subtree: true,
-                                attributes: true
-                            });
-                        }
-                        tier2Util.companyCheck($(this));
-                    }
                 }
             });
-        });
-    });
 
-    // Observe the jobs detail page top company name change because it is using Ajax
-    var jobDetailTopObserver = new MutationObserver(function (mutations) {
-        tier2Util.companyCheck($('.jobs-details-top-card__company-url').first());
+            if ($(mutation.target).is('.jobs-details-top-card__company-url')) {
+                tier2Util.companyCheck($('.jobs-details-top-card__company-url'));
+            }
+        });
     });
 
     var body = $('body').get(0);
@@ -35,20 +23,13 @@ $(function () {
         mainObserver.observe(body, {
             childList: true,
             subtree: true,
-            attributes: false
+            attributes: true
         });
     }
 
-    // First round of checking
-    var $jobDetailTopCompanyName = $('.jobs-details-top-card__company-url:not(.tier-2-checked)');
-    if ($jobDetailTopCompanyName.length > 0) {
-        jobDetailTopObserver.observe($jobDetailTopCompanyName.get(0), {
-            childList: true,
-            subtree: true,
-            attributes: true
-        });
-        tier2Util.companyCheck($jobDetailTopCompanyName.first());
-    }
+    $('.jobs-details-top-card__company-url:not(.tier-2-checked)').each(function () {
+        tier2Util.companyCheck($(this));
+    });
 
     $('.job-card__company-name:not(.tier-2-checked)').each(function () {
         tier2Util.companyCheck($(this));
