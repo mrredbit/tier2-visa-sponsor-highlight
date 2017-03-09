@@ -4,10 +4,11 @@ For those people who need visa to work in UK. This Chrome plugin is to highlight
 
 Current supported website:
 - Linkedin
-
+- AngelList
 
 <img src="https://github.com/mrredbit/tier2-visa-sponsor-highlight/blob/screenshot/screenshot/screenshot-linkedin-3.png" width="400px">  
 
 <img src="https://github.com/mrredbit/tier2-visa-sponsor-highlight/blob/screenshot/screenshot/screenshot-linkedin-1.png" width="400px">  
 
 <img src="https://github.com/mrredbit/tier2-visa-sponsor-highlight/blob/screenshot/screenshot/screenshot-linkedin-2.png" width="400px">  
+
