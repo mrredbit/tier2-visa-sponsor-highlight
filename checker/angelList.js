@@ -25,11 +25,6 @@ $(function () {
     }
 
     // For Company Detail Page
-    $('.company-summary > .u-colorGray3').each(function () {
-        tier2Util.companyCheck($(this));
-    });
-
-
     $('.profile-text .u-fontWeight500.s-vgBottom0_5').each(function () {
         tier2Util.companyCheck($(this));
     });
