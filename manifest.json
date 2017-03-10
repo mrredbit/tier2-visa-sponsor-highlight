@@ -6,7 +6,8 @@
     {
       "matches": [
         "https://www.linkedin.com/*",
-        "https://angel.co/*"
+        "https://angel.co/*",
+        "https://whoishiring.io/*"
       ],
       "js": [
         "jquery-3.1.1.min.js",
@@ -31,6 +32,14 @@
       ],
       "js": [
         "checker/angelList.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://whoishiring.io/*"
+      ],
+      "js": [
+        "checker/whoishiring.js"
       ]
     }
   ]
