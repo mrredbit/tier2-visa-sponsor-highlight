@@ -7,6 +7,8 @@ Current supported website:
 - AngelList
 - Indeed
 - whoishiring.io
+- Boomerang
+- JobHero
 
 <img src="https://github.com/mrredbit/tier2-visa-sponsor-highlight/blob/screenshot/screenshot/screenshot-linkedin-3.png" width="400px">  
 
