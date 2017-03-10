@@ -8,7 +8,9 @@
         "https://www.linkedin.com/*",
         "https://angel.co/*",
         "https://whoishiring.io/*",
-        "https://www.indeed.co.uk/*"
+        "https://www.indeed.co.uk/*",
+        "https://boolerang.co.uk/*",
+        "https://gojobhero.com/*"
       ],
       "js": [
         "jquery-3.1.1.min.js",
@@ -49,6 +51,22 @@
       ],
       "js": [
         "checker/indeed.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://boolerang.co.uk/*"
+      ],
+      "js": [
+        "checker/boolerang.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://gojobhero.com/*"
+      ],
+      "js": [
+        "checker/jobhero.js"
       ]
     }
   ]
