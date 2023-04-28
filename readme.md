@@ -1,3 +1,5 @@
+# (This project is not actively maintained, and the sponsored list is not updated since Mar 8, 2017)
+
 ### A Chrome plugin to highlight companies who has sponsored tier-2 visa in the past.
 
 For those people who need visa to work in UK. This Chrome plugin is to highlight companies who has sponsored tier-2 visa in the past, so that user can prioritise his job hunting.
